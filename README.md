@@ -1,2 +1,0 @@
-# gozebrahead.github.io
-Portfolio
