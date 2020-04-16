@@ -1,3 +1,8 @@
+body {
+    background-color: rgb(48, 48, 48);
+    scroll-behavior: smooth;
+}
+
 .fondo-imagen
 {
     background-image: -moz-linear-gradient(top, rgba(0,0,0,0.5), rgba(0,0,0,0.5)), url("https://images.unsplash.com/photo-1476820865390-c52aeebb9891?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=750&q=80");
@@ -9,14 +14,42 @@
     background-repeat: no-repeat;
     background-size: cover;
     padding-top: 0;
+
+    /* ANIMATIONS */
+    animation: load-background 1s ease-out;
+    animation-fill-mode: both;
 }
 
 .fondo-imagen .container .icono
 {
+    font-size: 50px;
     color: white;
+    transition: all 0.4s ease-out;
 }
 
 .fondo-imagen .container .icono:hover
 {
     color: rgb(255, 196, 0);
+}
+
+.page-title {
+    /* ANIMATIONS */
+    animation: load-text 1s ease-out 1.8s;
+    animation-fill-mode: both;
+}
+
+.page-text {
+    /* ANIMATIONS */
+    animation: load-text 1s ease-out 2.6s;
+    animation-fill-mode: both;
+}
+
+@keyframes load-background {
+    from { opacity: 0%; width: 0%; }
+    to { opacity: 100%; width: 100%; }
+}
+
+@keyframes load-text {
+    from { opacity: 0%; }
+    to { opacity: 100%; }
 }
