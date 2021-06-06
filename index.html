@@ -2,97 +2,164 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.2/css/all.css" integrity="sha384-oS3vJWv+0UjzBfQzYUhtDYW+Pj2yciDJxpsK1OYPAYjqT085Qq/1cq5FLXAZQ7Ay" crossorigin="anonymous">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Prompt:wght@100&display=swap" rel="stylesheet">
 
-    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+    <script src="https://kit.fontawesome.com/c39033e14b.js" crossorigin="anonymous"></script>
 
-    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="main.css" type="text/css" />
 
-    <title>Portfolio</title>
+    <title>Portfolio - Luciano Nieves</title>
 </head>
 <body>
-
-    <!-- MAIN DIVISOR -->
-    <div class="background text-white text-center">
-
-        <div class="page-title">
-
-            <!-- HEADER -->
-            <div class="container pt-5">
-                <h2 class="display-4">Welcome to my <span class="text-warning">Portfolio</span></h2>
-            </div>
-
-            <!-- LINKS -->
-            <div class="container">
-                <button type="button" class="btn btn-github">
-                    <a href="https://github.com/GOZEBRAHEAD" target="_blank">
-                        <div class="icono"><i class="fab fa-github"></i></div>
-                    </a>
-                </button>
-
-                <button type="button" class="btn btn-github">
-                    <a href="https://www.linkedin.com/in/luciano-nieves-2b5b52192/" target="_blank">
-                        <div class="icono"><i class="fab fa-linkedin"></i></div>
-                    </a>
-                </button>
-            </div>
-
-            <!-- DIVISION -->
-            <div class="dropdown-divider mt-3"></div>
-        </div>
-
-        <div class="page-text">
-            <!-- ABOUT ME -->
-            <div class="container-fluid mt-4">
-                <h3 class="display-4">Hi there!</h3>
-                <p class="lead mt-3 p-2">
-                    I'm Luciano Nieves, a Software Developer student from Argentina.
-                </p>
-                <p class="lead mt-3 p-2">
-                    My native language is Spanish, but I can speak in English <span class="text-warning">(Medium)</span> and Brazil Portuguese <span class="text-warning">(Low-Medium)</span>.
-                </p>
-                <p class="lead p-2">
-                    I have a quick learning in programming languages.
-                </p>
-                <p class="lead mt-3 p-3">
-                    I'm currently working with <span class="text-warning">Java</span>, but I have experience with:
-                    <ul class="lead list-unstyled">
-                        <li>HTML</li>
-                        <li>CSS</li>
-                        <li>JavaScript</li>
-                        <li>Pawn</li>
-                        <li>C++</li>
-                        <li>C# (WinForms)</li>
-                        <li>Unity Engine</li>
-                        <li>Microsoft SQL Server</li>
-                        <li>MySQL</li>
-                        <li>XAMPP</li>
-                        <li>Photoshop - Sony Vegas</li>
-                    </ul>
-                </p>
-                <h4 class="mt-5 font-weight-light">
-                    <u>
-                        You can access all my public <span class="text-warning">projects</span> on my <span class="text-warning">GitHub</span>!
-                    </u>
-                </h4>
-                <h6 class="font-weight-light">I'm always trying to update my repositories.</h6>
-            </div>
-
-            <!-- FOOTER -->
-            <div class="container mt-5">
-                <small>Created by Luciano Nieves</small>
-            </div>
-
-        </div>
-    </div>
     
-    <!-- SCRIPTS -->
-    <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js" integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n" crossorigin="anonymous"></script>
+    <!-- PAGE START SECTION -->
+    <main class="page__start">
 
-    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
+        <header>
+            <h1 class="page__title">I am Luciano Nieves</h1>
+            <h3 class="page__subtitle">Welcome to my portfolio!</h3>
+        </header>
 
-    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js" integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6" crossorigin="anonymous"></script>
+        <div class="socials__group">
+
+            <a href="https://www.instagram.com/lucho_nieves/" target="_blank"><i class="fab fa-instagram"></i></a>
+
+            <a href="https://github.com/GOZEBRAHEAD" target="_blank"><i class="fab fa-github"></i></a>
+
+            <a href="https://www.linkedin.com/in/luciano-nieves/" target="_blank"><i class="fab fa-linkedin-in"></i></a>
+
+        </div>
+
+        <div class="goto__projects">
+            <a href="#projects"><i class="fas fa-angle-double-down"></i></a>
+        </div>
+
+        <div class="vertical__text">
+            <p class="vertical__top__right">HOME</p>
+            <p class="vertical__bottom_left">HOME</p>
+        </div>
+
+    </main>
+
+    <!-- PROJECTS SECTION -->
+    <section id="projects">
+
+        <h2>Here you can see some of my projects</h2>
+
+        <div class="projects__general">
+
+            <!-- Project #1 -->
+            <div class="project__container">
+                <img class="project__image" src="../img/projects/ice-cream-concept.png" alt="ice cream concept" />
+
+                <div class="project__info">
+                    <h3>Ice Cream Shop (concept)</h3>
+
+                    <p>This is a simple concept I've made using HTML5 and CSS3 about an Ice Cream Shop.</p>
+
+                    <div class="project__buttons">
+                        <a href="https://github.com/GOZEBRAHEAD/Ice-cream-shop-concept" target="_blank">GitHub repository</a>
+                        <a href="https://ice-cream-shop-concept.netlify.app/" target="_blank">Live demo</a>
+                    </div>
+                </div>
+            </div>
+
+            <div class="project__separator"><div class="project__rectangle__separator"></div><div class="project__diamond__separator"></div><div class="project__rectangle__separator"></div></div>
+
+            <!-- Project #2 -->
+            <div class="project__container">
+                <img class="project__image" src="../img/projects/credit-card-concept.png" alt="ice cream concept" />
+
+                <div class="project__info">
+                    <h3>Credit Card (concept)</h3>
+
+                    <p>This is a Credit Card concept I've made with HTML5, CSS3 and vanilla JavaScript.</p>
+
+                    <div class="project__buttons">
+                        <a href="https://github.com/GOZEBRAHEAD/CreditCardConcept" target="_blank">GitHub repository</a>
+                        <a href="https://credit-card-concept.netlify.app/" target="_blank">Live demo</a>
+                    </div>
+                </div>
+            </div>
+
+            <div class="project__separator"><div class="project__rectangle__separator"></div><div class="project__diamond__separator"></div><div class="project__rectangle__separator"></div></div>
+
+            <!-- Project #3 -->
+            <div class="project__container">
+                <img class="project__image" src="../img/projects/business-center.png" alt="ice cream concept" />
+
+                <div class="project__info">
+                    <h3>Business Center</h3>
+
+                    <p>This is a Software made with C#, WinForms, SQL Server and Bunifu UI. It was a good project to understand C#!</p>
+
+                    <div class="project__buttons">
+                        <a href="https://github.com/GOZEBRAHEAD/Public-BusinessCenter" target="_blank">GitHub repository</a>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+
+    </section>
+
+    <!-- SKILLS SECTION -->
+    <section id="skills">
+
+        <h2>I have experience with</h2>
+
+        <div class="skills__general">
+
+            <div>
+                <img class="svg__icon" src="../img/icons/java.svg" alt="Java" />
+                <img class="svg__icon" src="../img/icons/js.svg" alt="JavaScript" />
+                <img class="svg__icon" src="../img/icons/c-sharp.svg" alt="C#" />
+                <img class="svg__icon" src="../img/icons/html5.svg" alt="HTML5" />
+                <img class="svg__icon" src="../img/icons/css-3.svg" alt="CSS3" />
+            </div>
+            <div>
+                <img class="svg__icon" src="../img/icons/sql.svg" alt="SQL" />
+                <img class="svg__icon" src="../img/icons/git.svg" alt="Git" />
+                <img class="svg__icon" src="../img/icons/bootstrap.svg" alt="Bootstrap" />
+            </div>
+
+        </div>
+
+    </section>
+
+    <!-- ABOUT ME SECTION -->
+    <section id="about-me">
+
+        <h2>About me</h2>
+
+        <div class="about-me__general">
+            <p>
+                I am a Software Development student from Argentina willing to relocate to US!
+                <br/>
+                I'm passionate about programming languages and teamwork.
+                <br/>
+                Currently I'm learning Java to become a Full-Stack Web Developer.
+                <br>
+                My native language is Spanish, but I can speak English too (<a href="https://www.efset.org/cert/L8PSXS" target="_blank">Click here to see my EFSET Certificate</a>).
+                <br/>
+                <br/>
+                I'm practicing my problem-solving skills with HackerRank (<a href="https://www.hackerrank.com/zebrahead" target="_blank">Click here to see my profile</a>).
+                <br/>
+                <br/>
+                <br/>
+                Feel free to contact me via <a href="https://www.instagram.com/lucho_nieves/" target="_blank">LinkedIn</a>, <a href="https://github.com/GOZEBRAHEAD" target="_blank">GitHub</a> or E-mail: luchonieves98@gmail.com
+            </p>
+        </div>
+
+        <footer>
+            <p>Made with <span>♥️</span></p>
+        </footer>
+
+    </section>
+
 </body>
 </html>
