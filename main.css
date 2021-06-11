@@ -117,17 +117,6 @@ body {
     color: var(--color_linkedin);
 }
 
-/* .goto__projects {
-    position: absolute;
-    bottom: 4rem;
-    font-size: 2rem;
-    animation: bouncing-arrows 1s linear infinite;
-}
-
-.goto__projects a {
-    color: var(--color_white);
-} */
-
 .goto__about-me {
     position: absolute;
     bottom: 4rem;
