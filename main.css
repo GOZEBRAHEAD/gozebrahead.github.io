@@ -1,4 +1,4 @@
-/* Created by Luciano Nieves - 23/05/2021 */
+/* Created by Luciano Nieves */
 
 /* ===================== */
 /* MAIN */
@@ -12,7 +12,6 @@
 :root {
     --color_black: #000000;
     --color_white: #ffffff;
-    --color_light_white: #ffffff86;
     --color_dark_blue: #0a1931;
     --color_pink: #cc2366;
     --color_dark_pink: #a71d54;
@@ -118,7 +117,7 @@ body {
     color: var(--color_linkedin);
 }
 
-.goto__projects {
+/* .goto__projects {
     position: absolute;
     bottom: 4rem;
     font-size: 2rem;
@@ -127,6 +126,109 @@ body {
 
 .goto__projects a {
     color: var(--color_white);
+} */
+
+.goto__about-me {
+    position: absolute;
+    bottom: 4rem;
+    font-size: 2rem;
+    animation: bouncing-arrows 1s linear infinite;
+}
+
+.goto__about-me a {
+    color: var(--color_white);
+}
+
+/* ===================== */
+/* ABOUT ME SECTION */
+/* ===================== */
+#about-me {
+    height: 100vh;
+    background-color: var(--color_dark_blue);
+    color: var(--color_white);
+
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    flex-direction: column;
+}
+
+#about-me h2 {
+    font-size: 1.7rem;
+    margin-top: -2rem;
+    border-bottom: 2px solid var(--color_pink);
+}
+
+.about-me__general {
+    height: 70%;
+    width: 90%;
+    display: flex;
+    justify-content: center;
+}
+
+.about-me__general p {
+    font-size: 1.3rem;
+    text-shadow: 0px 0px 1px var(--color_white);
+}
+
+.about-me__general p span {
+    color: var(--color_orange);
+}
+
+.about-me__general p a {
+    color: var(--color_orange);
+    text-decoration: none;
+    padding-bottom: 0.05rem;
+    border-bottom: 1px solid var(--color_dark_orange);
+}
+
+/* ===================== */
+/* SKILLS SECTION */
+/* ===================== */
+#skills {
+    height: 100vh;
+    background-color: var(--color_dark_blue);
+    color: var(--color_white);
+
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    justify-content: space-evenly;
+}
+
+#skills h2 {
+    font-size: 1.7rem;
+    margin-top: -6rem;
+    border-bottom: 2px solid var(--color_pink);
+}
+
+.skills__general {
+    height: 30%;
+    width: 80%;
+
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    flex-direction: column;
+}
+
+.skills__general div {
+    height: 100%;
+    width: 100%;
+
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+}
+
+.svg__icon {
+    height: 40%;
+    transition: all 0.3s;
+    cursor: pointer;
+}
+
+.svg__icon:hover {
+    transform: scale(1.1);
 }
 
 /* ===================== */
@@ -249,94 +351,6 @@ body {
 
 .project__info {
     font-size: 1.25rem;
-}
-
-/* ===================== */
-/* SKILLS SECTION */
-/* ===================== */
-#skills {
-    height: 100vh;
-    background-color: var(--color_dark_blue);
-    color: var(--color_white);
-
-    display: flex;
-    align-items: center;
-    flex-direction: column;
-    justify-content: space-evenly;
-}
-
-#skills h2 {
-    font-size: 1.7rem;
-    margin-top: -2rem;
-    border-bottom: 2px solid var(--color_pink);
-}
-
-.skills__general {
-    height: 30%;
-    width: 80%;
-
-    display: flex;
-    justify-content: space-evenly;
-    align-items: center;
-    flex-direction: column;
-}
-
-.skills__general div {
-    height: 100%;
-    width: 100%;
-
-    display: flex;
-    justify-content: space-evenly;
-    align-items: center;
-}
-
-.svg__icon {
-    height: 40%;
-    transition: all 0.3s;
-    cursor: pointer;
-}
-
-.svg__icon:hover {
-    transform: scale(1.1);
-}
-
-/* ===================== */
-/* ABOUT ME SECTION */
-/* ===================== */
-#about-me {
-    height: 100vh;
-    background-color: var(--color_dark_blue);
-    color: var(--color_white);
-
-    display: flex;
-    align-items: center;
-    justify-content: space-evenly;
-    flex-direction: column;
-}
-
-#about-me h2 {
-    font-size: 1.7rem;
-    margin-top: -2rem;
-    border-bottom: 2px solid var(--color_pink);
-}
-
-.about-me__general {
-    height: 70%;
-    width: 90%;
-    display: flex;
-    justify-content: center;
-}
-
-.about-me__general p {
-    font-size: 1.3rem;
-    text-shadow: 0px 0px 1px var(--color_white);
-}
-
-.about-me__general p a {
-    color: var(--color_orange);
-    text-decoration: none;
-    padding-bottom: 0.05rem;
-    border-bottom: 1px solid var(--color_dark_orange);
 }
 
 footer p span {
