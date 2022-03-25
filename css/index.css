@@ -31,7 +31,7 @@ body {
   height: 100vh;
   position: relative;
   display: grid;
-  grid-template-areas: "area-principal" "area-about" "area-experience" "area-contact" "area-footer"; }
+  grid-template-areas: "area-principal" "area-about" "area-experience" "area-contact" "area-footer"; }
 
 .layout__nav {
   height: 4rem;
@@ -182,3 +182,119 @@ body {
         .layout__principal .principal__button .button__socials a:hover {
           transform: translateY(-3px);
           color: #ffc164; }
+
+.layout__about {
+  grid-area: area-about;
+  height: 100%;
+  width: 100%;
+  /*
+  display: grid;
+  grid-template-areas: "about-title"
+                       "about-general"
+                       "about-skills"; */ }
+  .layout__about .about__info {
+    height: 80%;
+    width: 80%;
+    margin: 5rem auto;
+    /* padding: 2rem 0; */
+    border: 1px solid #ccd6f6;
+    box-shadow: 6px 6px 1px #1a3d72;
+    display: grid;
+    grid-template-areas: "about-title     about-title" "about-main      about-certificates";
+    grid-template-columns: 1fr 0.5fr; }
+    .layout__about .about__info--title {
+      grid-area: about-title;
+      width: fit-content;
+      margin: 2rem 3rem;
+      font-size: 2.5em;
+      color: #ffc164;
+      position: relative;
+      user-select: none; }
+      .layout__about .about__info--title svg {
+        height: 1.5rem;
+        width: 1.5rem; }
+      .layout__about .about__info--title::before {
+        content: "";
+        height: 1px;
+        width: 100%;
+        background-color: #ffc164;
+        transition: all 0.4s ease;
+        position: absolute;
+        bottom: 0;
+        left: 0; }
+    .layout__about .about__info .info__main {
+      grid-area: about-main; }
+      .layout__about .about__info .info__main .main__general {
+        grid-area: about-general;
+        width: 80%;
+        margin: 0 3rem;
+        font-size: 1em;
+        line-height: 2;
+        color: #8892b0; }
+        .layout__about .about__info .info__main .main__general span {
+          color: #ffc164; }
+        .layout__about .about__info .info__main .main__general--link {
+          text-decoration: none;
+          color: #ffc164; }
+          .layout__about .about__info .info__main .main__general--link:hover {
+            border-bottom: 1px solid #ffc164; }
+      .layout__about .about__info .info__main .main__skills {
+        grid-area: about-skills;
+        width: 80%;
+        margin: 2rem 3rem;
+        font-size: 1em;
+        line-height: 2; }
+        .layout__about .about__info .info__main .main__skills--title {
+          color: #ffc164;
+          font-size: 1em; }
+        .layout__about .about__info .info__main .main__skills .skills__techs {
+          color: #8892b0;
+          font-family: 'Roboto Mono', monospace;
+          font-size: 0.9em;
+          margin-left: 1rem;
+          width: fit-content; }
+          .layout__about .about__info .info__main .main__skills .skills__techs ul {
+            margin-top: 1rem;
+            list-style: none;
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            place-items: start auto;
+            column-gap: 4rem; }
+            .layout__about .about__info .info__main .main__skills .skills__techs ul li::before {
+              content: "\2666";
+              width: 1.1em;
+              display: inline-block;
+              margin-left: -1em;
+              color: #ffc164; }
+    .layout__about .about__info .info__certificates {
+      grid-area: about-certificates; }
+      .layout__about .about__info .info__certificates--title {
+        color: #ffc164;
+        font-size: 1em; }
+        .layout__about .about__info .info__certificates--title svg {
+          transform: translateY(5px); }
+      .layout__about .about__info .info__certificates .certificates__items {
+        width: fit-content;
+        color: #8892b0;
+        font-family: 'Roboto Mono', monospace;
+        font-size: 0.9em;
+        margin-left: 1rem; }
+        .layout__about .about__info .info__certificates .certificates__items--link {
+          text-decoration: none;
+          color: #ffc164; }
+          .layout__about .about__info .info__certificates .certificates__items--link:hover {
+            border-bottom: 1px solid #ffc164; }
+        .layout__about .about__info .info__certificates .certificates__items ul {
+          margin-top: 2rem;
+          list-style: none;
+          display: grid;
+          /* grid-template-columns: 1fr 1fr; */
+          /* place-items: start auto; */
+          /* column-gap: 4rem; */
+          row-gap: 1rem; }
+          .layout__about .about__info .info__certificates .certificates__items ul li::before {
+            content: "\2666";
+            width: 1.1em;
+            display: inline-block;
+            margin-left: -1em;
+            color: #ffc164; }
