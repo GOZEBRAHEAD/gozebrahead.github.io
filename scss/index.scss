@@ -286,15 +286,14 @@ body {
   
   grid-area: area-about;
 
-  height: 100%;
-  width: 100%;
+  height: 100vh;
+  /* width: 100%; */
   
   /*
   display: grid;
   grid-template-areas: "about-title"
                        "about-general"
                        "about-skills"; */
-  
   
   .about__info {
     height: 80%;
@@ -333,7 +332,7 @@ body {
         background-color: $color-orange;
         transition: all 0.4s ease;
         position: absolute;
-        bottom: 0;
+        top: 4rem;
         left: 0;
       }
     }
@@ -383,6 +382,7 @@ body {
         .skills__techs {
           color: $color-gray1;
           font-family: 'Roboto Mono', monospace;
+          font-weight: bold;
           font-size: 0.9em;
           margin-left: 1rem;
   
@@ -426,15 +426,18 @@ body {
         width: fit-content;
         color: $color-gray1;
         font-family: 'Roboto Mono', monospace;
+        font-weight: bold;
         font-size: 0.9em;
         margin-left: 1rem;
 
         &--link {
           text-decoration: none;
-          color: $color-orange;
+          color: $color-gray1;
+          transition: all 0.2s linear;
   
           &:hover {
             border-bottom: 1px solid $color-orange;
+            color: $color-orange;
           }
         }
 
@@ -454,6 +457,103 @@ body {
             display: inline-block;
             margin-left: -1em;
             color: $color-orange;
+          }
+        }
+      }
+    }
+  }
+}
+
+// =============== EXPERIENCE =============== //
+.layout__experience {
+
+  grid-area: area-experience;
+
+  /* width: 100%; */
+  height: 100vh;
+
+  .experience__container {
+    height: 80%;
+    width: 80%;
+    margin: 5rem auto;
+
+    display: grid;
+    grid-template-areas: "exp-title"
+                         "exp-jobs";
+    gap: 3rem;
+
+    &--title {
+
+      grid-area: exp-title;
+
+      width: fit-content;
+      margin: 2rem 3rem;
+      font-size: 2.5em;
+      color: $color-orange;
+      position: relative;
+      user-select: none;
+
+      svg {
+        height: 1.5rem;
+        width: 1.5rem;
+      }
+
+      &::before {
+        content: "";
+        height: 1px;
+        width: 100%;
+        background-color: $color-orange;
+        transition: all 0.4s ease;
+        position: absolute;
+        top: 4rem;
+        left: 0;
+      }
+    }
+
+    .container__jobs {
+
+      grid-area: exp-jobs;
+
+      width: calc(100% - 6rem);
+      margin: 0 3rem;
+
+      display: grid;
+      gap: 1rem;
+
+      .jobs__item {
+
+        height: 7.5rem;
+
+        display: grid;
+        grid-template-columns: 1.75fr 4fr;
+        gap: 1rem;
+
+        .item__info {
+
+          .item__info--company {
+            font-size: 1.1rem;
+            color: $color-orange;
+          }
+
+          .item__info--date {
+            padding-top: 0.5rem;
+            font-size: 0.9rem;
+            color: $color-gray1;
+          }
+        }
+
+        .item__description {
+
+          .item__description--position {
+            font-size: 1.1rem;
+            color: $color-orange;
+          }
+
+          .item__description--text {
+            padding-top: 0.5rem;
+            font-size: 0.9rem;
+            color: $color-gray1;
+            line-height: 1.5;
           }
         }
       }

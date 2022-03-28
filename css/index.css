@@ -185,8 +185,8 @@ body {
 
 .layout__about {
   grid-area: area-about;
-  height: 100%;
-  width: 100%;
+  height: 100vh;
+  /* width: 100%; */
   /*
   display: grid;
   grid-template-areas: "about-title"
@@ -220,7 +220,7 @@ body {
         background-color: #ffc164;
         transition: all 0.4s ease;
         position: absolute;
-        bottom: 0;
+        top: 4rem;
         left: 0; }
     .layout__about .about__info .info__main {
       grid-area: about-main; }
@@ -250,6 +250,7 @@ body {
         .layout__about .about__info .info__main .main__skills .skills__techs {
           color: #8892b0;
           font-family: 'Roboto Mono', monospace;
+          font-weight: bold;
           font-size: 0.9em;
           margin-left: 1rem;
           width: fit-content; }
@@ -277,13 +278,16 @@ body {
         width: fit-content;
         color: #8892b0;
         font-family: 'Roboto Mono', monospace;
+        font-weight: bold;
         font-size: 0.9em;
         margin-left: 1rem; }
         .layout__about .about__info .info__certificates .certificates__items--link {
           text-decoration: none;
-          color: #ffc164; }
+          color: #8892b0;
+          transition: all 0.2s linear; }
           .layout__about .about__info .info__certificates .certificates__items--link:hover {
-            border-bottom: 1px solid #ffc164; }
+            border-bottom: 1px solid #ffc164;
+            color: #ffc164; }
         .layout__about .about__info .info__certificates .certificates__items ul {
           margin-top: 2rem;
           list-style: none;
@@ -298,3 +302,61 @@ body {
             display: inline-block;
             margin-left: -1em;
             color: #ffc164; }
+
+.layout__experience {
+  grid-area: area-experience;
+  /* width: 100%; */
+  height: 100vh; }
+  .layout__experience .experience__container {
+    height: 80%;
+    width: 80%;
+    margin: 5rem auto;
+    display: grid;
+    grid-template-areas: "exp-title" "exp-jobs";
+    gap: 3rem; }
+    .layout__experience .experience__container--title {
+      grid-area: exp-title;
+      width: fit-content;
+      margin: 2rem 3rem;
+      font-size: 2.5em;
+      color: #ffc164;
+      position: relative;
+      user-select: none; }
+      .layout__experience .experience__container--title svg {
+        height: 1.5rem;
+        width: 1.5rem; }
+      .layout__experience .experience__container--title::before {
+        content: "";
+        height: 1px;
+        width: 100%;
+        background-color: #ffc164;
+        transition: all 0.4s ease;
+        position: absolute;
+        top: 4rem;
+        left: 0; }
+    .layout__experience .experience__container .container__jobs {
+      grid-area: exp-jobs;
+      width: calc(100% - 6rem);
+      margin: 0 3rem;
+      display: grid;
+      gap: 1rem; }
+      .layout__experience .experience__container .container__jobs .jobs__item {
+        height: 7.5rem;
+        display: grid;
+        grid-template-columns: 1.75fr 4fr;
+        gap: 1rem; }
+        .layout__experience .experience__container .container__jobs .jobs__item .item__info .item__info--company {
+          font-size: 1.1rem;
+          color: #ffc164; }
+        .layout__experience .experience__container .container__jobs .jobs__item .item__info .item__info--date {
+          padding-top: 0.5rem;
+          font-size: 0.9rem;
+          color: #8892b0; }
+        .layout__experience .experience__container .container__jobs .jobs__item .item__description .item__description--position {
+          font-size: 1.1rem;
+          color: #ffc164; }
+        .layout__experience .experience__container .container__jobs .jobs__item .item__description .item__description--text {
+          padding-top: 0.5rem;
+          font-size: 0.9rem;
+          color: #8892b0;
+          line-height: 1.5; }
