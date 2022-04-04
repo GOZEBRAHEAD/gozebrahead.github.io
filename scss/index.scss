@@ -15,6 +15,8 @@ html {
 
 body {
 	height: 100vh;
+  max-width: 1280px;
+  margin: auto;
 	background-color: #222020;
 	color: white;
 
@@ -45,6 +47,7 @@ body {
 // =============== LAYOUT =============== //
 .layout {
   height: 100vh;
+  max-width: 1280px;
   
   position: relative;
 
@@ -53,8 +56,11 @@ body {
 		"area-principal"
 		"area-about"
 		"area-experience"
+    "area-projects"
 		"area-contact"
 		"area-footer";
+
+  grid-template-rows: repeat(3, 100vh) 200vh 100vh 5rem;
 }
 
 // =============== NAVBAR =============== //
@@ -176,20 +182,11 @@ body {
   height: 80vh;
   /* margin: 6.5rem auto; */
   margin: 5rem auto;
-  padding-left: 10%;
 
   display: flex;
   justify-content: center;
   flex-direction: column;
   align-items: flex-start;
-
-  background:
-    linear-gradient(to right, $color-gray1 2px, transparent 2px) 0 0,
-    linear-gradient(to left, $color-gray1 2px, transparent 2px) 100% 100%,
-    linear-gradient(to bottom, $color-gray1 2px, transparent 2px) 0 0,
-    linear-gradient(to top, $color-gray1 2px, transparent 2px) 100% 100%;
-  background-repeat: no-repeat;
-  background-size: 30px 30px;
 
   h4 {
     font-family: 'Roboto Mono', monospace;
@@ -286,7 +283,7 @@ body {
   
   grid-area: area-about;
 
-  height: 100vh;
+  /* height: 100vh; ORIGINAL*/
   /* width: 100%; */
   
   /*
@@ -470,17 +467,20 @@ body {
   grid-area: area-experience;
 
   /* width: 100%; */
-  height: 100vh;
+  height: 100%;
 
   .experience__container {
     height: 80%;
+    max-height: 750px;
     width: 80%;
     margin: 5rem auto;
 
     display: grid;
     grid-template-areas: "exp-title"
                          "exp-jobs";
-    gap: 3rem;
+    /* grid-template-rows: 9rem 4fr; */
+    grid-template-rows: 9rem calc(100% - 9rem);
+    gap: 2rem;
 
     &--title {
 
@@ -514,13 +514,15 @@ body {
 
       grid-area: exp-jobs;
 
+      /* height: 100%; */
       width: calc(100% - 6rem);
       margin: 0 3rem;
 
       display: grid;
-      gap: 1rem;
+      grid-template-rows: 1fr 1fr 1fr;
+      /* gap: 1rem; */
 
-      .jobs__item {
+      .jobs__card {
 
         height: 7.5rem;
 
@@ -528,33 +530,190 @@ body {
         grid-template-columns: 1.75fr 4fr;
         gap: 1rem;
 
-        .item__info {
+        .card__info {
 
-          .item__info--company {
+          &--company {
             font-size: 1.1rem;
             color: $color-orange;
           }
 
-          .item__info--date {
+          &--date {
             padding-top: 0.5rem;
             font-size: 0.9rem;
             color: $color-gray1;
           }
         }
 
-        .item__description {
+        .card__description {
 
-          .item__description--position {
+          &--position {
             font-size: 1.1rem;
             color: $color-orange;
           }
 
-          .item__description--text {
+          &--text {
             padding-top: 0.5rem;
             font-size: 0.9rem;
             color: $color-gray1;
             line-height: 1.5;
           }
+        }
+      }
+    }
+  }
+}
+
+// =============== PROJECTS =============== //
+.layout__projects {
+
+  grid-area: area-projects;
+
+  /* background-color: #233554; */
+
+  /* width: 100%; */
+  height: 100%;
+
+  .projects__container {
+    height: 80%;
+    /* max-height: 750px; */
+    width: 80%;
+    margin: 5rem auto;
+
+    display: grid;
+    grid-template-areas: "projects-title"
+                         "projects-gallery";
+    /* grid-template-rows: 9rem 4fr; */
+    /*grid-template-rows: 9rem calc(80% - 9rem);*/
+    grid-template-rows: 9rem 1fr;
+    gap: 2rem;
+
+    &--title {
+
+      grid-area: projects-title;
+
+      width: fit-content;
+      margin: 2rem 3rem;
+      font-size: 2.5em;
+      color: $color-orange;
+      position: relative;
+      user-select: none;
+
+      svg {
+        height: 1.5rem;
+        width: 1.5rem;
+      }
+
+      &::before {
+        content: "";
+        height: 1px;
+        width: 100%;
+        background-color: $color-orange;
+        transition: all 0.4s ease;
+        position: absolute;
+        top: 4rem;
+        left: 0;
+      }
+    }
+
+    .container__gallery {
+
+      grid-area: projects-gallery;
+
+      height: 100%;
+      /* height: 100%; */
+      width: calc(100% - 6rem);
+      margin: 0 3rem;
+      
+      outline: 1px solid red;
+
+      display: grid;
+      /* grid-template-rows: repeat(auto-fill, minmax(19rem, 1fr)); */
+      grid-template-rows: 18rem 18rem;
+      gap: 1rem;
+
+      .gallery__project {
+        height: 18rem;
+        width: 100%;
+        background-color: #233554;
+        border-radius: 0.25rem;
+
+        display: grid;
+        grid-template-columns: 1fr 1.65fr;
+
+        .project__info {
+          padding: 1rem;
+
+          display: grid;
+          grid-template-rows: 2rem 1.5rem auto 2rem;
+          row-gap: 1rem;
+
+          .info__tech-stack {
+            display: flex;
+            align-items: center;
+            gap: 1rem;
+
+            &--technology {
+              user-select: none;
+              font-size: 0.9rem;
+              padding: 0.5rem 0.75rem;
+              background-color: $color-dark-blue;
+              border-radius: 0.15rem;
+              cursor: pointer;
+              transition: all 0.2s linear;
+
+              &:hover {
+                background-color: $color-dark2-blue;
+              }
+            }
+          }
+
+          .info__buttons {
+            display: flex;
+            justify-content: start;
+            align-items: center;
+            gap: 2rem;
+
+            &--primary {
+              padding: 0.6rem 0.85rem;
+              font-weight: bold;
+              text-align: center;
+              text-decoration: none;
+              background-color: $color-orange;
+              color: $color-dark-blue;
+              border-radius: 2px;
+              transition: all 0.2s linear;
+
+              &:hover {
+                background-color: $color-orange1;
+              }
+            }
+
+            &--secondary {
+              padding: 0.6rem 0.85rem;
+              text-align: center;
+              text-decoration: none;
+              font-weight: bold;
+              border: 1px solid $color-gray1;
+              color: $color-gray2;
+              border-radius: 2px;
+              transition: all 0.2s linear;
+
+              &:hover {
+                background-color: $color-gray1;
+                color: $color-dark-blue;
+                
+              }
+            }
+          }
+        }
+
+        &--img {
+          width: 100%;
+          min-width: 570px;
+          height: 18rem;
+          object-fit: fill;
+          border-top-right-radius: 0.25rem;
+          border-bottom-right-radius: 0.25rem;
         }
       }
     }

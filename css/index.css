@@ -10,6 +10,8 @@ html {
 
 body {
   height: 100vh;
+  max-width: 1280px;
+  margin: auto;
   background-color: #222020;
   color: white;
   font-family: "Inter", sans-serif;
@@ -29,9 +31,11 @@ body {
 
 .layout {
   height: 100vh;
+  max-width: 1280px;
   position: relative;
   display: grid;
-  grid-template-areas: "area-principal" "area-about" "area-experience" "area-contact" "area-footer"; }
+  grid-template-areas: "area-principal" "area-about" "area-experience" "area-projects" "area-contact" "area-footer";
+  grid-template-rows: repeat(3, 100vh) 200vh 100vh 5rem; }
 
 .layout__nav {
   height: 4rem;
@@ -113,14 +117,10 @@ body {
   height: 80vh;
   /* margin: 6.5rem auto; */
   margin: 5rem auto;
-  padding-left: 10%;
   display: flex;
   justify-content: center;
   flex-direction: column;
-  align-items: flex-start;
-  background: linear-gradient(to right, #8892b0 2px, transparent 2px) 0 0, linear-gradient(to left, #8892b0 2px, transparent 2px) 100% 100%, linear-gradient(to bottom, #8892b0 2px, transparent 2px) 0 0, linear-gradient(to top, #8892b0 2px, transparent 2px) 100% 100%;
-  background-repeat: no-repeat;
-  background-size: 30px 30px; }
+  align-items: flex-start; }
   .layout__principal h4 {
     font-family: 'Roboto Mono', monospace;
     font-size: clamp(12px, 3vw, 16px);
@@ -185,7 +185,7 @@ body {
 
 .layout__about {
   grid-area: area-about;
-  height: 100vh;
+  /* height: 100vh; ORIGINAL*/
   /* width: 100%; */
   /*
   display: grid;
@@ -306,14 +306,17 @@ body {
 .layout__experience {
   grid-area: area-experience;
   /* width: 100%; */
-  height: 100vh; }
+  height: 100%; }
   .layout__experience .experience__container {
     height: 80%;
+    max-height: 750px;
     width: 80%;
     margin: 5rem auto;
     display: grid;
     grid-template-areas: "exp-title" "exp-jobs";
-    gap: 3rem; }
+    /* grid-template-rows: 9rem 4fr; */
+    grid-template-rows: 9rem calc(100% - 9rem);
+    gap: 2rem; }
     .layout__experience .experience__container--title {
       grid-area: exp-title;
       width: fit-content;
@@ -336,27 +339,138 @@ body {
         left: 0; }
     .layout__experience .experience__container .container__jobs {
       grid-area: exp-jobs;
+      /* height: 100%; */
       width: calc(100% - 6rem);
       margin: 0 3rem;
       display: grid;
-      gap: 1rem; }
-      .layout__experience .experience__container .container__jobs .jobs__item {
+      grid-template-rows: 1fr 1fr 1fr;
+      /* gap: 1rem; */ }
+      .layout__experience .experience__container .container__jobs .jobs__card {
         height: 7.5rem;
         display: grid;
         grid-template-columns: 1.75fr 4fr;
         gap: 1rem; }
-        .layout__experience .experience__container .container__jobs .jobs__item .item__info .item__info--company {
+        .layout__experience .experience__container .container__jobs .jobs__card .card__info--company {
           font-size: 1.1rem;
           color: #ffc164; }
-        .layout__experience .experience__container .container__jobs .jobs__item .item__info .item__info--date {
+        .layout__experience .experience__container .container__jobs .jobs__card .card__info--date {
           padding-top: 0.5rem;
           font-size: 0.9rem;
           color: #8892b0; }
-        .layout__experience .experience__container .container__jobs .jobs__item .item__description .item__description--position {
+        .layout__experience .experience__container .container__jobs .jobs__card .card__description--position {
           font-size: 1.1rem;
           color: #ffc164; }
-        .layout__experience .experience__container .container__jobs .jobs__item .item__description .item__description--text {
+        .layout__experience .experience__container .container__jobs .jobs__card .card__description--text {
           padding-top: 0.5rem;
           font-size: 0.9rem;
           color: #8892b0;
           line-height: 1.5; }
+
+.layout__projects {
+  grid-area: area-projects;
+  /* background-color: #233554; */
+  /* width: 100%; */
+  height: 100%; }
+  .layout__projects .projects__container {
+    height: 80%;
+    /* max-height: 750px; */
+    width: 80%;
+    margin: 5rem auto;
+    display: grid;
+    grid-template-areas: "projects-title" "projects-gallery";
+    /* grid-template-rows: 9rem 4fr; */
+    /*grid-template-rows: 9rem calc(80% - 9rem);*/
+    grid-template-rows: 9rem 1fr;
+    gap: 2rem; }
+    .layout__projects .projects__container--title {
+      grid-area: projects-title;
+      width: fit-content;
+      margin: 2rem 3rem;
+      font-size: 2.5em;
+      color: #ffc164;
+      position: relative;
+      user-select: none; }
+      .layout__projects .projects__container--title svg {
+        height: 1.5rem;
+        width: 1.5rem; }
+      .layout__projects .projects__container--title::before {
+        content: "";
+        height: 1px;
+        width: 100%;
+        background-color: #ffc164;
+        transition: all 0.4s ease;
+        position: absolute;
+        top: 4rem;
+        left: 0; }
+    .layout__projects .projects__container .container__gallery {
+      grid-area: projects-gallery;
+      height: 100%;
+      /* height: 100%; */
+      width: calc(100% - 6rem);
+      margin: 0 3rem;
+      outline: 1px solid red;
+      display: grid;
+      /* grid-template-rows: repeat(auto-fill, minmax(19rem, 1fr)); */
+      grid-template-rows: 18rem 18rem;
+      gap: 1rem; }
+      .layout__projects .projects__container .container__gallery .gallery__project {
+        height: 18rem;
+        width: 100%;
+        background-color: #233554;
+        border-radius: 0.25rem;
+        display: grid;
+        grid-template-columns: 1fr 1.65fr; }
+        .layout__projects .projects__container .container__gallery .gallery__project .project__info {
+          padding: 1rem;
+          display: grid;
+          grid-template-rows: 2rem 1.5rem auto 2rem;
+          row-gap: 1rem; }
+          .layout__projects .projects__container .container__gallery .gallery__project .project__info .info__tech-stack {
+            display: flex;
+            align-items: center;
+            gap: 1rem; }
+            .layout__projects .projects__container .container__gallery .gallery__project .project__info .info__tech-stack--technology {
+              user-select: none;
+              font-size: 0.9rem;
+              padding: 0.5rem 0.75rem;
+              background-color: #0a192f;
+              border-radius: 0.15rem;
+              cursor: pointer;
+              transition: all 0.2s linear; }
+              .layout__projects .projects__container .container__gallery .gallery__project .project__info .info__tech-stack--technology:hover {
+                background-color: #1a3d72; }
+          .layout__projects .projects__container .container__gallery .gallery__project .project__info .info__buttons {
+            display: flex;
+            justify-content: start;
+            align-items: center;
+            gap: 2rem; }
+            .layout__projects .projects__container .container__gallery .gallery__project .project__info .info__buttons--primary {
+              padding: 0.6rem 0.85rem;
+              font-weight: bold;
+              text-align: center;
+              text-decoration: none;
+              background-color: #ffc164;
+              color: #0a192f;
+              border-radius: 2px;
+              transition: all 0.2s linear; }
+              .layout__projects .projects__container .container__gallery .gallery__project .project__info .info__buttons--primary:hover {
+                background-color: #d6a151; }
+            .layout__projects .projects__container .container__gallery .gallery__project .project__info .info__buttons--secondary {
+              padding: 0.6rem 0.85rem;
+              text-align: center;
+              text-decoration: none;
+              font-weight: bold;
+              border: 1px solid #8892b0;
+              color: #ccd6f6;
+              border-radius: 2px;
+              transition: all 0.2s linear; }
+              .layout__projects .projects__container .container__gallery .gallery__project .project__info .info__buttons--secondary:hover {
+                background-color: #8892b0;
+                color: #0a192f; }
+        .layout__projects .projects__container .container__gallery .gallery__project--img {
+          width: 100%;
+          min-width: 570px;
+          height: 18rem;
+          object-fit: fill;
+          border-top-right-radius: 0.25rem;
+          border-bottom-right-radius: 0.25rem; }
