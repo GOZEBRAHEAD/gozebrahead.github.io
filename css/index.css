@@ -35,7 +35,7 @@ body {
   position: relative;
   display: grid;
   grid-template-areas: "area-principal" "area-about" "area-experience" "area-projects" "area-contact" "area-footer";
-  grid-template-rows: repeat(3, 100vh) auto 100vh 5rem; }
+  grid-template-rows: repeat(3, 100vh) auto 80vh 5rem; }
 
 .layout__nav {
   height: 4rem;
@@ -482,3 +482,59 @@ body {
           object-fit: fill;
           border-top-right-radius: 0.25rem;
           border-bottom-right-radius: 0.25rem; }
+
+.layout__contact {
+  grid-area: area-contact;
+  /* width: 100%; */
+  height: 100%; }
+  .layout__contact .contact__container {
+    height: 80%;
+    max-height: 750px;
+    width: 80%;
+    margin: 5rem auto;
+    display: grid;
+    grid-template-areas: "contact-title" "contact-text";
+    /* grid-template-rows: 9rem 4fr; */
+    grid-template-rows: 9rem 5rem; }
+    .layout__contact .contact__container--title {
+      grid-area: contact-title;
+      width: fit-content;
+      margin: 2rem 3rem;
+      font-size: 2.5em;
+      color: #ffc164;
+      position: relative;
+      user-select: none; }
+      .layout__contact .contact__container--title svg {
+        height: 1.5rem;
+        width: 1.5rem; }
+      .layout__contact .contact__container--title::before {
+        content: "";
+        height: 1px;
+        width: 100%;
+        background-color: #ffc164;
+        transition: all 0.4s ease;
+        position: absolute;
+        top: 4rem;
+        left: 0; }
+    .layout__contact .contact__container--description {
+      grid-area: contact-text;
+      width: 75%;
+      margin-left: 3rem;
+      font-size: 1.15rem;
+      line-height: 1.5;
+      color: #8892b0; }
+    .layout__contact .contact__container--link {
+      text-decoration: none;
+      color: #ffc164; }
+      .layout__contact .contact__container--link:hover {
+        border-bottom: 1px solid #ffc164; }
+
+.layout__footer {
+  grid-area: area-footer;
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center; }
+  .layout__footer p {
+    font-size: 0.9rem;
+    color: #8892b0; }
