@@ -21,7 +21,7 @@ body {
 	color: white;
 
 	font-family: "Inter", sans-serif;
-	font-size: 16px;
+	font-size: calc(16px + 0.15vw);
 	background-color: $color-dark-blue;
 
 	-webkit-font-smoothing: antialiased;
