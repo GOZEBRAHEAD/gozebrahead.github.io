@@ -1,445 +1,199 @@
 <!DOCTYPE html>
 <html lang="en">
-	<head>
-		<meta charset="UTF-8" />
-		<meta http-equiv="X-UA-Compatible" content="IE=edge" />
-		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portfolio</title>
 
-		<link rel="preconnect" href="https://fonts.googleapis.com" />
-		<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-		<link href="https://fonts.googleapis.com/css2?family=Inter&family=Roboto+Mono:wght@300&display=swap" rel="stylesheet" />
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Fira+Sans&family=Inconsolata:wght@700&display=swap" rel="stylesheet">
 
-		<link rel="stylesheet" href="./css/index.css" />
+    <link rel="stylesheet" href="./css/index.css" />
+</head>
+<body>
 
-		<title>Portfolio - Luciano Nieves</title>
-	</head>
-	<body>
-
-		<div class="layout">
-
-			<!-- navbar -->
-			<nav class="layout__nav">
-				<div class="nav__title">
-					<a href="#">
-            <img src="./extra/logo.svg" alt="Name logo" />
-          </a>
-				</div>
-
-				<div class="nav__right" id="list-menu">
-					<ul class="right__list">
-						<li><a href="#about-me" id="btn-about">About me</a></li>
-						<li><a href="#experience" id="btn-about">Experience</a></li>
-						<li><a href="#projects" id="btn-projects">Projects</a></li>
-						<li><a href="#contact-me" id="btn-contact">Contact me</a></li>
-					</ul>
-
-					<a class="right__resume" href="./extra/resume.pdf" aria-label="Resume" target="_blank" rel="noreferrer">Resume</a>
-
-					<button class="right__close-menu" id="close-menu">
-						<i class="fas fa-times"></i>
-					</button>
-				</div>
-
-				<div class="nav__open-menu" id="open-menu">
-					<i class="fas fa-bars"></i>
-				</div>
-			</nav>
-
-			<!-- principal -->
-			<main class="layout__principal">
-        <h4>Hi! My name is</h4>
-        <h1>Luciano Nieves</h1>
-        <h3>Welcome to my portfolio!</h3>
-
-        <p class="layout__principal--description">I'm a web developer from Argentina focused on front-end, teamwork and learning new skills and technologies.</p>
-
-        <div class="principal__button">
-
-          <a class="button__about" href="#about-me">
-            About me
-            <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-arrow-down" width="24" height="24" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round">
-            <path stroke="none" d="M0 0h24v24H0z" fill="none"></path>
-            <line x1="12" y1="5" x2="12" y2="19"></line>
-            <line x1="18" y1="13" x2="12" y2="19"></line>
-            <line x1="6" y1="13" x2="12" y2="19"></line>
-            </svg>
-          </a>
-
-         <div class="button__socials">
-           
-          <a href="https://www.instagram.com/lucho_nieves/" aria-label="Instagram" target="_blank" rel="noreferrer">
-            <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-brand-instagram" width="24" height="24" viewBox="0 0 24 24" stroke-width="1" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round">
-              <path stroke="none" d="M0 0h24v24H0z" fill="none"></path>
-              <rect x="4" y="4" width="16" height="16" rx="4"></rect>
-              <circle cx="12" cy="12" r="3"></circle>
-              <line x1="16.5" y1="7.5" x2="16.5" y2="7.501"></line>
-            </svg>
-          </a>
-
-          <a href="https://github.com/GOZEBRAHEAD" aria-label="GitHub" target="_blank" rel="noreferrer">
-            <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-brand-github" width="24" height="24" viewBox="0 0 24 24" stroke-width="1" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round">
-              <path stroke="none" d="M0 0h24v24H0z" fill="none"></path>
-              <path d="M9 19c-4.3 1.4 -4.3 -2.5 -6 -3m12 5v-3.5c0 -1 .1 -1.4 -.5 -2c2.8 -.3 5.5 -1.4 5.5 -6a4.6 4.6 0 0 0 -1.3 -3.2a4.2 4.2 0 0 0 -.1 -3.2s-1.1 -.3 -3.5 1.3a12.3 12.3 0 0 0 -6.2 0c-2.4 -1.6 -3.5 -1.3 -3.5 -1.3a4.2 4.2 0 0 0 -.1 3.2a4.6 4.6 0 0 0 -1.3 3.2c0 4.6 2.7 5.7 5.5 6c-.6 .6 -.6 1.2 -.5 2v3.5"></path>
-            </svg>
-          </a>
-
-          <a href="https://www.linkedin.com/in/luciano-nieves/" aria-label="LinkedIn" target="_blank" rel="noreferrer">
-            <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-brand-linkedin" width="24" height="24" viewBox="0 0 24 24" stroke-width="1" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round">
-              <path stroke="none" d="M0 0h24v24H0z" fill="none"></path>
-              <rect x="4" y="4" width="16" height="16" rx="2"></rect>
-              <line x1="8" y1="11" x2="8" y2="16"></line>
-              <line x1="8" y1="8" x2="8" y2="8.01"></line>
-              <line x1="12" y1="16" x2="12" y2="11"></line>
-              <path d="M16 16v-3a2 2 0 0 0 -4 0"></path>
-            </svg>
-          </a>
-
-         </div>
-
-        </div>
+    <!-- MAIN LAYOUT -->
+    <div class="layout">
         
-      </main>
+        <!-- HOME -->
+        <main class="home background-img">
+            
+            <div class="card">
+                <h1 class="text-title">Luciano Nieves</h1>
 
-			<!-- about me & skills (tech stack) -->
-			<section class="layout__about" id="about-me">
-
-        <div class="about__info">
-          
-          <p class="about__info--title">
-            <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-id" width="24" height="24" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round">
-              <path stroke="none" d="M0 0h24v24H0z" fill="none"></path>
-              <rect x="3" y="4" width="18" height="16" rx="3"></rect>
-              <circle cx="9" cy="10" r="2"></circle>
-              <line x1="15" y1="8" x2="17" y2="8"></line>
-              <line x1="15" y1="12" x2="17" y2="12"></line>
-              <line x1="7" y1="16" x2="17" y2="16"></line>
-            </svg>
-            About me
-          </p>
-
-          <div class="info__main">
-            <div class="main__general">
-              <p>Hello! My name is Luciano Nieves, and I'm a <span>web developer</span> from Argentina.</p>
-
-              <p>I can speak <span>Spanish</span>, <span>Portuguese</span> and <span>English</span> (<a href="https://www.efset.org/cert/L8PSXS" aria-label="EFSET" target="_blank" rel="noreferrer" class="main__general--link">EFSET certificate</a>).</p>
-              <p>Currently I'm learning <span>Japanese</span> too!</p>
-
-              <p>You can <a href="https://github.com/GOZEBRAHEAD" aria-label="GitHub" target="_blank" rel="noreferrer" class="main__general--link">click here</a> to see my GitHub profile.</p>
+                <div class="card-home">
+                    <p class="text-normal">A developer from Argentina focused on problem solving skills while working on web and software development. I'm passionate about coding and learning new technologies.</p>
+                    <a class="button" href="#tech-stack">View my projects</a>
+                </div>
             </div>
 
-            <div class="main__skills">
-              <p class="main__skills--title">List of technologies I've experience with:</p>
+        </main>
 
-              <div class="skills__techs">
-                <img src="https://raw.githubusercontent.com/danielcranney/readme-generator/main/public/icons/skills/html5-colored.svg" width="36" height="36" alt="HTML5 icon" />
-                <img src="https://raw.githubusercontent.com/danielcranney/readme-generator/main/public/icons/skills/css3-colored.svg" width="36" height="36" alt="CSS3 icon" />
-                <img src="https://raw.githubusercontent.com/danielcranney/readme-generator/main/public/icons/skills/sass-colored.svg" width="36" height="36" alt="SASS icon" />
-                <img src="https://raw.githubusercontent.com/danielcranney/readme-generator/main/public/icons/skills/bootstrap-colored.svg" width="36" height="36" alt="Bootstrap icon" />
-                <img src="https://raw.githubusercontent.com/danielcranney/readme-generator/main/public/icons/skills/javascript-colored.svg" width="36" height="36" alt="Javascript icon" />
-                <img src="https://raw.githubusercontent.com/danielcranney/readme-generator/main/public/icons/skills/react-colored.svg" width="36" height="36" alt="React icon" />
-                <img src="https://raw.githubusercontent.com/danielcranney/readme-generator/main/public/icons/skills/java-colored.svg" width="36" height="36" alt="Java icon" />
-                <img src="https://raw.githubusercontent.com/danielcranney/readme-generator/main/public/icons/skills/csharp-colored.svg" width="36" height="36" alt="C# icon" />
-                <img src="https://raw.githubusercontent.com/danielcranney/readme-generator/main/public/icons/skills/mysql-colored.svg" width="36" height="36" alt="MySQL icon" />
-                <img src="https://raw.githubusercontent.com/danielcranney/readme-generator/main/public/icons/skills/firebase-colored.svg" width="36" height="36" alt="Firebase icon" />
-                <img src="https://www.svgrepo.com/show/303229/microsoft-sql-server-logo.svg" width="36" height="36" alt="SQL Server icon" />
-                <!-- <ul>
-                  <li>HTML5</li>
-                  <li>Java</li>
-                  <li>CSS3</li>
-                  <li>MySQL</li>
-                  <li>JavaScript</li>
-                  <li>SASS</li>
-                  <li>ReactJs</li>
-                  <li>Git</li>
-                </ul> -->
-              </div>
-            </div>
-          </div>
+        <!-- ABOUT ME -->
+        <section class="about-me">
 
-          <div class="info__certificates">
-            <p class="info__certificates--title">
-              <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-certificate" width="24" height="24" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round">
-                <path stroke="none" d="M0 0h24v24H0z" fill="none"></path>
-                <circle cx="15" cy="15" r="3"></circle>
-                <path d="M13 17.5v4.5l2 -1.5l2 1.5v-4.5"></path>
-                <path d="M10 19h-5a2 2 0 0 1 -2 -2v-10c0 -1.1 .9 -2 2 -2h14a2 2 0 0 1 2 2v10a2 2 0 0 1 -1 1.73"></path>
-                <line x1="6" y1="9" x2="18" y2="9"></line>
-                <line x1="6" y1="12" x2="9" y2="12"></line>
-                <line x1="6" y1="15" x2="8" y2="15"></line>
-              </svg>
-              Certificates from courses:
-            </p>
-
-            <div class="certificates__items">
-              <ul>
-                <li><a href="https://www.codecademy.com/profiles/lucho_nieves/certificates/5f85dd867b67b60014ac9ea3" aria-label="codecademy" target="_blank" rel="noreferrer" class="certificates__items--link">Front-End Engineer Career Path</a></li>
-                <li><a href="https://www.codecademy.com/profiles/lucho_nieves/certificates/af00e5032d0a68cc84879983f5d8333b" aria-label="codecademy" target="_blank" rel="noreferrer" class="certificates__items--link">ReactJs</a></li>
-                <li><a href="https://www.codecademy.com/profiles/lucho_nieves/certificates/512386fdc7f6c934f98b01e6afa8285a" aria-label="codecademy" target="_blank" rel="noreferrer" class="certificates__items--link">JavaScript</a></li>
-                <li><a href="https://blockchainmisiones.aerobotsmisiones.com/certcheck/index.php?numero=1654" aria-label="polotic" target="_blank" rel="noreferrer" class="certificates__items--link">Java Full-Stack Web</a></li>
-                <li><a href="https://www.hackerrank.com/certificates/564dd8c0e327" aria-label="hackerrank" target="_blank" rel="noreferrer" class="certificates__items--link">Java</a></li>
-                <li><a href="https://www.hackerrank.com/certificates/8ab09e2b7427" aria-label="hackerrank" target="_blank" rel="noreferrer" class="certificates__items--link">C#</a></li>
-                <li><a href="https://www.codecademy.com/profiles/lucho_nieves/certificates/042a4e5884e3eb6ea1f2a12be6abb851" aria-label="codecademy" target="_blank" rel="noreferrer" class="certificates__items--link">SQL</a></li>
-                <li><a href="https://www.freecodecamp.org/certification/zebrahead/responsive-web-design" aria-label="freecodecamp" target="_blank" rel="noreferrer" class="certificates__items--link">Responsive Web Design</a></li>
-              </ul>
-            </div>
-          </div>
-
-        </div>
-
-      </section>
-
-			<!-- experience -->
-			<section class="layout__experience" id="experience">
-
-        <div class="experience__container">
-
-          <p class="experience__container--title">
-            <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-terminal-2" width="24" height="24" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round">
-              <path stroke="none" d="M0 0h24v24H0z" fill="none"></path>
-              <path d="M8 9l3 3l-3 3"></path>
-              <line x1="13" y1="15" x2="16" y2="15"></line>
-              <rect x="3" y="4" width="18" height="16" rx="2"></rect>
-           </svg>
-            Experience
-          </p>
-
-          <div class="container__jobs">
-
-            <div class="jobs__card">
-              <div class="card__info">
-                <p class="card__info--company">Impronta solutions</p>
-                <p class="card__info--date">May 2022 - Present</p>
-              </div>
-
-              <div class="card__description">
-                <p class="card__description--position">Full-Stack Web Developer</p>
-                <p class="card__description--text">Development of new modules and functionalities in the internal system used throughout the country. Technologies: <span class="orange-technology">JavaScript</span>, <span class="orange-technology">.NET</span>, <span class="orange-technology">VB</span> and <span class="orange-technology">SQL Server</span>.</p>
-                <!-- <p class="card__description--text">Creating web solutions while focusing on front-end and back-end. Technologies: JavaScript, .NET, VB and SQL Server.</p> -->
-              </div>
+            <div class="card background-card">
+                <h1 class="text-title">About me</h1>
+                <p class="text-normal">I am a self-taught programmer with experience and interest in different programming languages. Currently, I'm studying a <b>Bachelor's Degree in Computer Science</b> from <a class="link" href="https://www.uopeople.edu/" target="_blank">University of the People</a>.</p>
+                <br />
+                <p class="text-normal">I can speak three languages: <b>Spanish</b> (native), <b>English</b> (<a class="link" href="https://www.efset.org/cert/L8PSXS" target="_blank">EF SET Certificate</a>) and <b>Portuguese</b>, and I will try to learn Japanese in the future!</p>
             </div>
 
-            <div class="jobs__card">
-              <div class="card__info">
-                <p class="card__info--company">Freelance</p>
-                <p class="card__info--date">Feb 2021 - Jul 2021</p>
-              </div>
-              
-              <div class="card__description">
-                <p class="card__description--position">Java Minecraft Developer</p>
-                <p class="card__description--text">Working in a private core for a server with the main objective of creating more than 100 functionalities and game modes. The main technologies used in this project were: <span class="orange-technology">Java</span> and <span class="orange-technology">MySQL</span>.</p>
-              </div>
+        </section>
+
+        <!-- TECH STACK AND CERTIFICATIONS -->
+        <section id="tech-stack" class="tech-stack-certifications background-card">
+
+            <div class="card">
+                <h1 class="text-title">Tech Stack and certifications</h1>
+
+                <div class="stacks-certif-container">
+                    
+                    <div class="stacks-card">
+                        <h3 class="text-subtitle">Languages</h3>
+                        <p class="text-normal">Java, JavaScript, jQuery, C#, VB.NET</p>
+                    </div>
+
+                    <div class="stacks-card">
+                        <h3 class="text-subtitle">Frameworks</h3>
+                        <p class="text-normal">ReactJs, React-Native, Spring Boot</p>
+                    </div>
+
+                    <div class="stacks-card">
+                        <h3 class="text-subtitle">Databases</h3>
+                        <p class="text-normal">SQL Server, MySQL, PostgreSQL, Firebase</p>
+                    </div>
+
+                    <div class="stacks-card">
+                        <h3 class="text-subtitle">Other skills</h3>
+                        <p class="text-normal">HTML, CSS, Git, Agile methodology, Postman</p>
+                    </div>
+
+                    <div class="certif-card">
+                        <h3 class="text-subtitle">Certifications</h3>
+                        <ul class="text-normal">
+                            <li><a class="link" href="https://www.credly.com/badges/9f894288-6a64-428e-97f6-458c6ddc33ad" target="_blank">Google IT Support Professional Certificate</a></li>
+                            
+                            <li><a class="link" href="https://www.codecademy.com/profiles/lucho_nieves/certificates/5f85dd867b67b60014ac9ea3" target="_blank">Front-End Engineer Career Path</a></li>
+                            
+                            <li><a class="link" href="https://www.codecademy.com/profiles/lucho_nieves/certificates/af00e5032d0a68cc84879983f5d8333b" target="_blank">ReactJs</a></li>
+                            
+                            <li><a class="link" href="https://blockchainmisiones.aerobotsmisiones.com/certcheck/index.php?numero=1654" target="_blank">Java Full-Stack Web</a></li>
+                            
+                            <li><a class="link" href="https://www.hackerrank.com/certificates/564dd8c0e327" target="_blank">Java</a></li>
+                            
+                            <li><a class="link" href="https://www.hackerrank.com/certificates/8ab09e2b7427" target="_blank">C#</a></li>
+                        </ul>
+                    </div>
+
+                </div>
             </div>
 
-            <div class="jobs__card">
-              <div class="card__info">
-                <p class="card__info--company">Freelance</p>
-                <p class="card__info--date">Oct 2020 - Dec 2020</p>
-              </div>
+        </section>
 
-              <div class="card__description">
-                <p class="card__description--position">Desktop C# Developer</p>
-                <p class="card__description--text">Desktop software developing for business management. The main technologies used were: <span class="orange-technology">C#</span>, <span class="orange-technology">WinForms</span>, <span class="orange-technology">SQL Server</span>, <span class="orange-technology">Bunifu UI Framework</span>.</p>
-              </div>
-            </div>
+        <!-- EXPERIENCE -->
+        <section class="experience">
 
-          </div>
-          
-        </div>
-
-      </section>
-
-      <!-- projects -->
-			<section class="layout__projects" id="projects">
-
-        <div class="projects__container">
-
-          <p class="projects__container--title">
-            <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-code" width="24" height="24" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round">
-              <path stroke="none" d="M0 0h24v24H0z" fill="none"></path>
-              <polyline points="7 8 3 12 7 16"></polyline>
-              <polyline points="17 8 21 12 17 16"></polyline>
-              <line x1="14" y1="4" x2="10" y2="20"></line>
-           </svg>
-            Projects
-          </p>
-
-          <div class="container__gallery">
-
-            <div class="gallery__project">
-
-              <div class="project__info">
-
-                <h2 class="project__info--title">Agenda</h2>
+            <div class="card background-card">
                 
-                <div class="info__tech-stack">
+                <h1 class="text-title">Experience</h1>
 
-                  <p class="info__tech-stack--technology">HTML/CSS</p>
-                  <p class="info__tech-stack--technology">JavaScript</p>
-                  <p class="info__tech-stack--technology">ReactJs</p>
+                <div class="experience-container">
+
+                    <div class="experience-timeline-vertical"></div>
+
+                    <div class="experience-card">
+                        <div class="experience-timeline-horizontal"></div>
+                        <div class="experience-timeline-item"><p class="text-subtitle">1</p></div>
+
+                        <h3 class="text-subtitle">Full-Stack Developer - Impronta Solutions</h3>
+                        <p class="text-small">Participate in aspects of agile software development such as implementation, deployment and testing.</p>
+                        <p class="text-small">Work on front-end and back-end to develop new features, like new functionalities for the vendors and customers, creation of APIs, modify and optimize existing systems inside the main application, etc.</p>
+                        <p class="text-small">Constant collaboration and communication with the team to ensure the applications performance.</p>
+                        <p class="text-small">Give technical support to our vendors to fix any problem they have.</p>
+                    </div>
+
+                    <div class="experience-card">
+                        <div class="experience-timeline-horizontal"></div>
+                        <div class="experience-timeline-item"><p class="text-subtitle">2</p></div>
+
+                        <h3 class="text-subtitle">Java Minecraft Developer - Freelancer</h3>
+                        <p class="text-small">Developing a private core mod with a team for a server with the main objective of creating more than 100 functionalities. Some of those were: +60 commands, different game modes, team/party systems, territory systems, account register/login system, statistics, etc.</p>
+                    </div>
+
+                    <div class="experience-card">
+                        <div class="experience-timeline-horizontal"></div>
+                        <div class="experience-timeline-item"><p class="text-subtitle">3</p></div>
+
+                        <h3 class="text-subtitle">C# / WinForms Developer - Freelancer</h3>
+                        <p class="text-small">Developing a desktop software for business management. The software included product, customer and sales registration, graphical statistics, product filters, etc.</p>
+                    </div>
 
                 </div>
-
-                <p class="project__info--description">This app allows you to create contacts and appointments.</p>
-
-                <div class="info__buttons">
-                  <a class="info__buttons--primary" href="https://react-agenda-zebrahead.vercel.app/" aria-label="Demo" target="_blank" rel="noreferrer">Live demo</a>
-                  <a class="info__buttons--secondary" href="https://github.com/GOZEBRAHEAD/react-agenda" aria-label="GitHub" target="_blank" rel="noreferrer">GitHub</a>
-                </div>
-
-              </div>
-
-              <img class="gallery__project--img" src="https://user-images.githubusercontent.com/54969894/156908383-8db2eada-a837-448a-a2f8-a8a23029b68c.png" alt="project img" />
 
             </div>
 
-            <div class="gallery__project">
+        </section>
 
-              <div class="project__info">
+        <!-- PROJECTS -->
+        <section class="projects background-card">
 
-                <h2 class="project__info--title">Food menu</h2>
+            <div class="card">
                 
-                <div class="info__tech-stack">
+                <h1 class="text-title">Projects</h1>
 
-                  <p class="info__tech-stack--technology">HTML/CSS</p>
-                  <p class="info__tech-stack--technology">JavaScript</p>
-                  <p class="info__tech-stack--technology">ReactJs</p>
+                <div class="projects-information">
+
+                    <a class="project-card" href="https://github.com/GOZEBRAHEAD/Polotic-FullStack-Java/tree/main/Proyecto-Final" target="_blank">
+                        <div class="project-timeline-item"><p class="text-subtitle">1</p></div>
+
+                        <h3 class="text-subtitle">Hotel room reservation</h3>
+                        <p class="text-small">A web application with a full-stack Java/JSP/JPA/Servlet/MySQL stack to manage the hotel's room reservation for clients.</p>
+                    </a>
+
+                    <a class="project-card" href="https://github.com/GOZEBRAHEAD/SpringBoot-API-base" target="_blank">
+                        <div class="project-timeline-item"><p class="text-subtitle">2</p></div>
+
+                        <h3 class="text-subtitle">Spring Boot API base</h3>
+                        <p class="text-small">A simple API base made with Spring Boot. It can be used as a template for future projects.</p>
+                    </a>
+
+                    <a class="project-card" href="https://github.com/GOZEBRAHEAD/Public-BusinessCenter" target="_blank">
+                        <div class="project-timeline-item"><p class="text-subtitle">3</p></div>
+
+                        <h3 class="text-subtitle">Business Center</h3>
+                        <p class="text-small">A desktop software made with C# and Bunifu UI to manage an entire store (products, clients, graphics, statistics, deliverys, etc).</p>
+                    </a>
 
                 </div>
-
-                <p class="project__info--description">A simple food menu app with cards and filters.</p>
-
-                <div class="info__buttons">
-                  <a class="info__buttons--primary" href="https://react-food-menu.vercel.app/" aria-label="Demo" target="_blank" rel="noreferrer">Live demo</a>
-                  <a class="info__buttons--secondary" href="https://github.com/GOZEBRAHEAD/react-food-menu" aria-label="GitHub" target="_blank" rel="noreferrer">GitHub</a>
-                </div>
-
-              </div>
-
-              <img class="gallery__project--img" src="https://user-images.githubusercontent.com/54969894/161477176-36a063bf-91ef-47b2-8d14-7543b00e02b6.png" alt="project img" />
 
             </div>
 
-            <div class="gallery__project">
+        </section>
 
-              <div class="project__info">
+        <!-- GITHUB -->
+        <section class="projects background-card">
+            <div class="card">
+                <h1 class="text-title">GitHub</h1>
+                <p class="text-normal">Check out my <a class="link" href="https://github.com/GOZEBRAHEAD" target="_blank">GitHub profile</a> to see my other projects!</p>
+            </div>
+        </section>
 
-                <h2 class="project__info--title">Hotel room reservation</h2>
-                
-                <div class="info__tech-stack">
+        <!-- CONTACT ME -->
+        <section class="contact-me">
 
-                  <p class="info__tech-stack--technology">Java</p>
-                  <p class="info__tech-stack--technology">JSP</p>
-                  <p class="info__tech-stack--technology">Servlets</p>
-                  <p class="info__tech-stack--technology">MySQL</p>
-
-                </div>
-
-                <p class="project__info--description">This is a hotel room reservation system made as a final project for a Full-Stack Web Developer course with Java, using UML diagrams, JSP, JPA, Servlets and MySQL.</p>
-
-                <div class="info__buttons">
-                  <a class="info__buttons--secondary" href="https://github.com/GOZEBRAHEAD/Polotic-FullStack-Java/tree/main/Proyecto-Final" aria-label="GitHub" target="_blank" rel="noreferrer">GitHub</a>
-                </div>
-
-              </div>
-
-              <img class="gallery__project--img" src="https://user-images.githubusercontent.com/54969894/136122123-ae98cb4e-5391-47a0-90e2-ccb8ca128844.png" alt="project img" />
-
+            <div class="card contact-background">
+                <h1 class="text-title">Contact information</h1>
+                <p class="text-normal">I am currently open to new developer positions, so if you think that I can be a good fit for the role you are trying to fill, please send me a message via <a class="link" href="https://www.linkedin.com/in/luciano-nieves/" target="_blank">LinkedIn</a> or <a class="link" href="mailto:luchonieves98@gmail.com" target="_blank">e-mail</a>.</p>
+                <br />
+                <p class="text-normal">I will reply as soon as posible!</p>
             </div>
 
-            <div class="gallery__project">
+        </section>
 
-              <div class="project__info">
+    </div>
 
-                <h2 class="project__info--title">Weather app</h2>
-                
-                <div class="info__tech-stack">
-
-                  <p class="info__tech-stack--technology">HTML/CSS</p>
-                  <p class="info__tech-stack--technology">JavaScript</p>
-
-                </div>
-
-                <p class="project__info--description">This app allows you to see the forecast for the next 5 days of any city around the world. You can search by coords (latitude/longitude) or specific names.</p>
-
-                <div class="info__buttons">
-                  <a class="info__buttons--primary" href="https://forecast-app-zebrahead.vercel.app/" aria-label="Demo" target="_blank" rel="noreferrer">Live demo</a>
-                  <a class="info__buttons--secondary" href="https://github.com/GOZEBRAHEAD/forecast-app" aria-label="GitHub" target="_blank" rel="noreferrer">GitHub</a>
-                </div>
-
-              </div>
-
-              <img class="gallery__project--img" src="https://user-images.githubusercontent.com/54969894/151849233-f284671c-7f0e-4c1f-8ec8-53ffccd31db4.png" alt="project img" />
-
-            </div>
-
-            <div class="gallery__project">
-
-              <div class="project__info">
-
-                <h2 class="project__info--title">Guitar shop</h2>
-                
-                <div class="info__tech-stack">
-
-                  <p class="info__tech-stack--technology">HTML/CSS</p>
-                  <p class="info__tech-stack--technology">SCSS</p>
-                  <p class="info__tech-stack--technology">JavaScript</p>
-
-                </div>
-
-                <p class="project__info--description">This is a guitar e-commerce app.</p>
-
-                <div class="info__buttons">
-                  <a class="info__buttons--primary" href="https://guitar-shop-zebrahead.vercel.app/" aria-label="Demo" target="_blank" rel="noreferrer">Live demo</a>
-                  <a class="info__buttons--secondary" href="https://github.com/GOZEBRAHEAD/GuitarShop" aria-label="GitHub" target="_blank" rel="noreferrer">GitHub</a>
-                </div>
-
-              </div>
-
-              <img class="gallery__project--img" src="https://user-images.githubusercontent.com/54969894/132963230-9ba0105d-128c-441c-8d6c-a4a786d4f791.png" alt="project img" />
-
-            </div>
-
-          </div>
-          
-        </div>
-
-      </section>
-
-			<!-- contact -->
-			<section class="layout__contact" id="contact-me">
-
-        <div class="contact__container">
-
-          <p class="contact__container--title">
-            <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-mail-forward" width="24" height="24" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round">
-              <path stroke="none" d="M0 0h24v24H0z" fill="none"></path>
-              <path d="M12 18h-7a2 2 0 0 1 -2 -2v-10a2 2 0 0 1 2 -2h14a2 2 0 0 1 2 2v7.5"></path>
-              <path d="M3 6l9 6l9 -6"></path>
-              <path d="M15 18h6"></path>
-              <path d="M18 15l3 3l-3 3"></path>
-            </svg>
-            Contact me
-          </p>
-
-          <p class="contact__container--description">
-            Thanks for looking at my portfolio!
-            <br>
-            <br>
-            I am currently open to new developer positions, so if you think that I can be a good fit for the role you are trying to fill, then please send me a message via <a href="https://www.linkedin.com/in/luciano-nieves/" aria-label="LinkedIn" target="_blank" rel="noreferrer" class="contact__container--link">LinkedIn</a> or <a href="mailto:luchonieves98@gmail.com" class="contact__container--link">E-mail</a>.
-            <br>
-            I will reply as soon as posible!            
-          </p>
-          
-        </div>
-
-      </section>
-
-			<!-- footer -->
-			<footer class="layout__footer">
-        <p>Luciano Nieves - 2022</p>
-      </footer>
-		</div>
-
-    <script src="./js/index.js"></script>
-	</body>
+</body>
 </html>

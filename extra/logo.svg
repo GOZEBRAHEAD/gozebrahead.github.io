@@ -1,8 +1,0 @@
-<svg width="24" height="24" xmlns="http://www.w3.org/2000/svg" stroke-width="1.5" fill="none">
- <g>
-  <title>Layer 1</title>
-  <path d="m11.22628,1.17319c0.1856,-0.10717 0.4144,-0.10717 0.6,0.00001l8.9263,5.15359c0.1856,0.10717 0.3,0.30525 0.3,0.51961l0,10.30719c0,0.2143 -0.1144,0.4124 -0.3,0.5196l-8.9263,5.1536c-0.1856,0.1072 -0.4144,0.1072 -0.6,0l-8.92628,-5.1536c-0.18564,-0.1072 -0.3,-0.3053 -0.3,-0.5196l0,-10.30719c0,-0.21436 0.11436,-0.41244 0.3,-0.51962l8.92628,-5.15359z" stroke="#ffc164" stroke-linecap="round" stroke-linejoin="round" id="svg_1"/>
-  <text fill="#ffc164" stroke="#000" stroke-width="0" x="4.94919" y="15.62497" id="svg_2" font-size="10" font-family="'Inter'" text-anchor="start" xml:space="preserve" font-weight="normal">LN</text>
- </g>
-
-</svg>
