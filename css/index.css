@@ -51,6 +51,12 @@ body {
   padding: calc(1.125rem * 2.75) calc(1.125rem * 3.75);
   border-radius: 0.25em; }
 
+.card-experience {
+  height: 90%;
+  width: 990px;
+  padding: calc(1.125rem * 2.75) calc(1.125rem * 3.75);
+  border-radius: 0.25em; }
+
 .background-img {
   background-position: center;
   background-size: cover;
@@ -279,3 +285,22 @@ body {
   background-size: cover;
   background-repeat: no-repeat;
   background-image: linear-gradient(0deg, #241631bf, #241631bf), url("../img/background-contact.jpg"); }
+
+/* MOBILE */
+@media only screen and (max-width: 700px) {
+  .card-experience {
+    padding: calc(1.125rem * 2.75) calc(1.125rem * 2.75); }
+  .text-title {
+    font-size: 44px; }
+  .text-subtitle {
+    font-size: 22px; }
+  .text-normal {
+    font-size: 15px; }
+  .text-small {
+    font-size: 12.4px; }
+  .experience {
+    padding: 6.5rem 1rem; }
+  .experience-card {
+    padding-left: 4rem; }
+  .experience-timeline-horizontal {
+    width: 0; } }
