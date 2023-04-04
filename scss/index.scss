@@ -14,6 +14,7 @@ html {
 }
 
 body {
+    width: 100%;
     font-size: 16px;
     overflow-x: hidden;
 }
@@ -57,14 +58,24 @@ body {
 
 .card {
     height: 90%;
-    width: 990px;
+    max-width: 990px;
+    width: 100%;
     padding: $card-inner-padding;
+    border-radius: 0.25em;
+}
+
+.card-tech-stack {
+    height: 90%;
+    max-width: 990px;
+    width: 100%;
+    padding: $card-tech-stack-inner-padding;
     border-radius: 0.25em;
 }
 
 .card-experience {
     height: 90%;
-    width: 990px;
+    max-width: 990px;
+    width: 100%;
     padding: $card-inner-padding;
     border-radius: 0.25em;
 }
@@ -113,6 +124,7 @@ body {
 .layout {
     height: 100%;
     width: 100%;
+    min-width: 350px;
     background-color: $background-color-page;
     line-height: 1.7;
     flex: 1;
@@ -120,7 +132,7 @@ body {
 
 /* ========== HOME ========== */
 .home {
-    padding: 2.5rem 6.5rem;
+    padding: 2.5rem 3.5rem;
     width: 100%;
 
     display: flex;
@@ -147,6 +159,7 @@ body {
 
 /* ========== TECH STACK AND CERTIFICATIONS ========== */
 .tech-stack-certifications {
+    padding: 2.5rem 6.5rem;
     width: 100%;
 
     display: flex;
@@ -195,7 +208,7 @@ body {
 
 /* ========== EXPERIENCE ========== */
 .experience {
-    padding: 6.5rem;
+    padding: 2.5rem 6.5rem;
     width: 100%;
 
     background-position: center;
@@ -266,8 +279,9 @@ body {
 
 /* ========== PROJECTS ========== */
 .projects {
-    position: relative;
     width: 100%;
+    padding: 1.5rem 0;
+    position: relative;
 
     display: flex;
     justify-content: center;
@@ -334,8 +348,18 @@ body {
     align-items: center;
 }
 
+/* ========== GITHUB ========== */
+.github {
+    width: 100%;
+    position: relative;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
 /* ========== CONTACT ME ========== */
-.contact-me {    
+.contact-me {
     padding: 2.5rem 6.5rem;
     width: 100%;
 
@@ -343,8 +367,6 @@ body {
     justify-content: center;
     align-items: center;
 }
-
-
 
 .contact-background {
     padding: 5rem 3rem;
@@ -355,17 +377,34 @@ body {
     background-image: linear-gradient(0deg, #241631bf, #241631bf), url("../img/background-contact.jpg");
 }
 
-/* MOBILE */
-@media only screen and (max-width: 700px) {
+/* ========== MOBILE ========== */
+@media only screen and (max-width: 800px) {
 
+    .card,
+    .card-tech-stack,
     .card-experience {
-        padding: calc(1.125rem * 2.75) calc(1.125rem * 2.75);
+        padding: 1.5rem;
+    }
+
+    .projects-information {
+        gap: 1.5rem;
+    }
+
+    .project-card {
+        padding: 1rem 0;
+        padding-left: 2rem;
+    }
+
+    .project-timeline-item {
+        top: 25px;
+        width: 30px;
+        height: 30px;
     }
 
     .text {
     
         &-title {
-            font-size: 44px;
+            font-size: 37px;
         }
     
         &-subtitle {
@@ -373,7 +412,7 @@ body {
         }
     
         &-normal {
-            font-size: 15px;
+            font-size: 14px;
         }
     
         &-small {
@@ -381,8 +420,19 @@ body {
         }
     }
 
-    .experience {
-        padding: 6.5rem 1rem;
+    .home {
+        padding: 0;
+    }
+
+    .about-me,
+    .tech-stack-certifications,
+    .experience,
+    .contact-me {
+        padding: 2.5rem 0;
+    }
+
+    .experience-container .text-subtitle {
+        font-size: 18px;
     }
 
     .experience-card {
