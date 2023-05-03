@@ -170,6 +170,7 @@ body {
 .stacks-certif-container {
     height: 100%;
     width: 100%;
+    max-width: 870px;
 
     display: flex;
     flex-wrap: wrap;
@@ -189,7 +190,8 @@ body {
 }
 
 .certif-card {
-    flex: 1 1 auto;
+    flex: 2;
+    flex-basis: 100%;
     width: 17.5em;
     border-radius: 0.25em;
     grid-column: 1 / span 2;

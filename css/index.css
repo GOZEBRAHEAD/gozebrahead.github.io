@@ -141,13 +141,13 @@ body {
 .stacks-certif-container {
   height: 100%;
   width: 100%;
+  max-width: 870px;
   display: flex;
   flex-wrap: wrap;
   gap: 1rem; }
 
 .stacks-card {
   flex: 1 1 auto;
-  /*max-width: 17.5em;*/
   width: 17.5em;
   border-radius: 0.25em;
   padding: 1rem;
@@ -157,8 +157,8 @@ body {
   line-height: 2.5rem; }
 
 .certif-card {
-  flex: 1 1 auto;
-  /*max-width: 17.5em;*/
+  flex: 2;
+  flex-basis: 100%;
   width: 17.5em;
   border-radius: 0.25em;
   grid-column: 1 / span 2;
@@ -174,7 +174,6 @@ body {
 
 /* ========== EXPERIENCE ========== */
 .experience {
-  /*padding: 6.5rem;*/
   padding: 2.5rem 6.5rem;
   width: 100%;
   background-position: center;
@@ -310,7 +309,7 @@ body {
   background-repeat: no-repeat;
   background-image: linear-gradient(0deg, #241631bf, #241631bf), url("../img/background-contact.jpg"); }
 
-/* MOBILE */
+/* ========== MOBILE ========== */
 @media only screen and (max-width: 800px) {
   .card,
   .card-tech-stack,
@@ -345,40 +344,4 @@ body {
   .experience-card {
     padding-left: 4rem; }
   .experience-timeline-horizontal {
-    width: 0; }
-  /*
-    .card-experience {
-        padding: calc(1.125rem * 2.75) calc(1.125rem * 2.75);
-    }
-
-    .text {
-    
-        &-title {
-            font-size: 44px;
-        }
-    
-        &-subtitle {
-            font-size: 22px;
-        }
-    
-        &-normal {
-            font-size: 15px;
-        }
-    
-        &-small {
-            font-size: 12.4px;
-        }
-    }
-
-    .experience {
-        padding: 6.5rem 1rem;
-    }
-
-    .experience-card {
-        padding-left: 4rem;
-    }
-
-    .experience-timeline-horizontal {
-        width: 0;
-    }
-    */ }
+    width: 0; } }
