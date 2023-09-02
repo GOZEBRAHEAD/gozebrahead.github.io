@@ -117,6 +117,7 @@ body {
   align-items: center; }
 
 .card-home {
+  margin-top: 20px;
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -229,6 +230,22 @@ body {
   justify-content: center;
   align-items: center; }
 
+.mini-tech-container {
+  display: flex;
+  gap: 15px;
+  padding: 10px 0 20px 0;
+  /*margin-bottom: 25px;*/
+  user-select: none;
+  flex-wrap: wrap; }
+
+.mini-tech-item {
+  font-family: 'Fira Sans', sans-serif;
+  font-size: 14.4px;
+  color: #DAD1E6;
+  background-color: #312140ff;
+  padding: 0 10px;
+  border-radius: 0.25rem; }
+
 /* ========== PROJECTS ========== */
 .projects {
   width: 100%;
@@ -324,6 +341,10 @@ body {
     top: 25px;
     width: 30px;
     height: 30px; }
+  .project-card > .text-subtitle {
+    padding: 5px 0 1rem 10px; }
+  .project-card > .text-small {
+    padding: 0 10px; }
   .text-title {
     font-size: 37px; }
   .text-subtitle {
